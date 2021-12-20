@@ -27,3 +27,14 @@ Como entregar este teste
 -----
 
 Você deve forkar este projeto em sua própria conta do GitHub e fazer o commit em seu próprio repositório.
+
+
+Instruções para rodar o projeto
+-----
+
+Esta API foi desenvolvida em python 3.9.5.
+
+- Criar uma virtualenv com a versão do python 3.9.5.
+- Instalar os requisitos para rodar o projeto (pip install -r requirements.txt).
+- Rodar a API com o comando "python main.py"
+
