@@ -5,7 +5,7 @@ from cpf_api.views.cpf import CPFView
 
 app = Flask(__name__)
 api = Api(app)
-api.add_resource(CPFView, '/<string:cpf>/')
+api.add_resource(CPFView, '/check_cpf/<string:cpf>/')
 
 if __name__ == '__main__':
     app.run()

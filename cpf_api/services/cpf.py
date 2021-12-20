@@ -16,13 +16,10 @@ class CPFService:
         return re.sub("[^0-9]", "", text)
 
     def validate_cpf(self):
-        if not self.cpf:
-            raise ValueError("No CPF")
-
         with open(BLACKLIST_PATH) as file:
             content = file.read()
             lines = content.splitlines()
             for line in lines:
                 if self.only_numbers(line) == self.cpf:
-                    return {'status': 'BLOCK', 'http_status': 404}
-            return {'status': 'FREE', 'http_status': 302}
+                    return {'status': 'BLOCK'}
+            return {'status': 'FREE'}
