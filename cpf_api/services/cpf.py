@@ -1,8 +1,6 @@
 import os
 import re
 
-from flask import jsonify
-
 from utils import get_project_root
 
 BLACKLIST_PATH = os.path.join(get_project_root(), 'blacklist.txt')
