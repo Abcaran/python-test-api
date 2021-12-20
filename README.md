@@ -37,4 +37,4 @@ Esta API foi desenvolvida em python 3.9.5.
 - Criar uma virtualenv com a versão do python 3.9.5.
 - Instalar os requisitos para rodar o projeto (pip install -r requirements.txt).
 - Rodar a API com o comando "python main.py"
-
+- Para verificar se um CPF está na blacklist o endpoint é '/check_cpf/<número do cpf>'.
