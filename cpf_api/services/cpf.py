@@ -26,5 +26,11 @@ class CPFService:
             lines = content.splitlines()
             for line in lines:
                 if self.only_numbers(line) == self.cpf:
-                    return jsonify({'status': 'FREE'})
-            return jsonify({'status': 'BLOCK'})
+                    return jsonify({
+                        'CPF': self.cpf,
+                        'status': 'FREE',
+                    })
+            return jsonify({
+                'CPF': self.cpf,
+                'status': 'BLOCK'
+            })
